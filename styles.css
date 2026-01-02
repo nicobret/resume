@@ -1,5 +1,34 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("/fonts/Quicksand-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("/fonts/Quicksand-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Light.woff2") format("woff2"),
+    url("/fonts/Quicksand-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.75;
+  color: #555;
 }
 
 a {
@@ -10,15 +39,11 @@ a:hover {
   text-decoration: underline;
 }
 
-ul {
-  line-height: 2rem;
-}
-
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
+  /* font-size: 75%; */
+  font-weight: bold;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -31,7 +56,7 @@ ul {
 main {
   max-width: 60rem;
   margin: auto;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 header {
@@ -40,12 +65,31 @@ header {
   margin: auto;
   padding: 1rem;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.profile {
+header h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 0;
+}
+
+.profile-picture-container {
   border-radius: 100%;
-  object-fit: cover;
+  overflow: hidden;
+  height: 7rem;
+  width: 7rem;
+  flex-shrink: 0;
+}
+
+.profile-picture-container img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 section {
@@ -60,6 +104,29 @@ section:hover {
 }
 
 h2 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+  font-weight: normal;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(161, 211, 255);
+}
+
+.card-subtitle {
+  color: #555;
+  font-style: italic;
   margin-top: 0;
-  letter-spacing: 0.1rem;
 }

@@ -4,13 +4,14 @@
 
 <head>
   <title>Sample HTML Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
-    <div class="profile">
-      <img src="/images/profile.jpg" alt="Profile Picture" width="150" />
+    <div class="profile-picture-container">
+      <img src="/images/profile.jpg" alt="Profile Picture" cl />
     </div>
     <div>
       <h1>Nicolas Bretécher</h1>
@@ -19,8 +20,7 @@
         <a href="https://www.linkedin.com/in/nicolas-bretecher-dev/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
-      </p>
-      <p>
+        -
         <a href="mailto:nicolas.bretecher@proton.me"> Email </a>
       </p>
     </div>
@@ -38,11 +38,20 @@
     </section>
 
     <section id="experience">
+
       <h2>Experience</h2>
-      <ul>
-        <li>Fullstack Developer at Tech Solutions (2020 - Present)</li>
-        <li>Frontend Developer at Web Creators (2018 - 2020)</li>
-      </ul>
+      <article class="card">
+        <h3>Fullstack Developer at Tech Solutions
+        </h3>
+        <p class="card-subtitle">
+          2020 - Present
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Frontend Developer at Web Creators</h3>
+        <p class="card-subtitle">2018 - 2020</p>
+      </article>
     </section>
 
     <section id="skills">
