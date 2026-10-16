@@ -120,6 +120,15 @@ h3 {
   font-weight: normal;
 }
 
+.project-screenshot {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid rgb(161, 211, 255);
+  border-radius: 0.5rem;
+}
+
 .card {
   margin-top: 1rem;
   padding: 1rem;
